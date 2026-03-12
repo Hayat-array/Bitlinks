@@ -1,12 +1,5 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 import Link from "next/link";
-
-const poppins = localFont({
-  src: "./fonts/Poppins-ExtraBold.ttf",
-  variable: "--font-poppins",
-  weight: "100 900"
-});
 
 export default function Home() {
   return (
@@ -33,7 +26,7 @@ export default function Home() {
               The Best URL Shortener Market
             </div>
 
-            <h1 className={`text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-600 leading-tight ${poppins.className}`}>
+            <h1 className="text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-600 leading-tight">
               Short Links.<br className="hidden md:block" /> Big Impact.
             </h1>
             
